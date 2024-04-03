@@ -14,6 +14,7 @@ fn main() -> Result<(), String> {
         let target = ask_user("Enter target name (for what app/service)")?;
         let secret = ask_user("Enter secret (easy to remember)")?;
         let prefix = ask_user("Enter prefix (or leave blank)")?;
+        print!("Result: ");
         (target, secret, prefix)
     } else {
         let target = parse_arg(&args, 0);
